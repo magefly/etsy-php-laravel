@@ -385,6 +385,7 @@
         "params": {
             "quantity": "int",
             "title": "string",
+            "sku":"string",
             "description": "text",
             "price": "float",
             "materials": "array(string)",
@@ -408,6 +409,7 @@
             "style": "array(string)"
         },
         "defaults": {
+            "sku":null,
             "materials": null,
             "shop_section_id": null,
             "image_ids": null,
