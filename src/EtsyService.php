@@ -20,17 +20,14 @@ class EtsyService
     /** @var TokenCredentials $tokenCredentials */
     private $tokenCredentials;
 
-    /** @var Store */
-    private $session;
 
     /**
      * EtsyService constructor.
      * @param SessionManager $session
      * @param array $config
      */
-    public function __construct(SessionManager $session, array $config)
+    public function __construct(array $config)
     {
-        $this->session = $session;
 
         $this->server = new Etsy([
             'identifier' => $config['consumer_key'],
